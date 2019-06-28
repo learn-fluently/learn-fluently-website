@@ -15,10 +15,13 @@ module.exports = {
     rules: {
         // Place to specify ESLint rules. Can be used to overwrite rules specified from the extended configs
         // e.g. "@typescript-eslint/explicit-function-return-type": "off",
-        "@typescript-eslint/explicit-function-return-type": ["warn", {
-            "allowExpressions": true,
-            "allowTypedFunctionExpressions": true
-        }],
+        '@typescript-eslint/explicit-function-return-type': [
+            'warn',
+            {
+                allowExpressions: true,
+                allowTypedFunctionExpressions: true,
+            },
+        ],
     },
     settings: {
         react: {
