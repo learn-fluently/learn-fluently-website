@@ -7,22 +7,25 @@ export default createGlobalStyle`
         -moz-osx-font-smoothing: grayscale;
         -webkit-font-smoothing: antialiased;
         text-rendering: optimizeLegibility;
-      }
+    }
+    div, label, p, span {
+        user-select: none;
+    }
     body {
         background-color: ${Colors.backgroundColor};
         margin: 0;
         padding: 0;
-        height: 100%;
-        overflow: hidden;
+        flex: 1;
         display: flex;
+        min-height: 100%;
     }
     body, button, input, select, textarea {
-        font-family: 'Helvetica Neue', Arial, sans-serif;
+        font-family: sans-serif;
     }
     input, button, textarea, :focus {
       outline: none;
     }
-    #root {s
+    #root {
         display: flex;
         flex: 1;
     }
