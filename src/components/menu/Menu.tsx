@@ -7,15 +7,23 @@ import { Link, withRouter } from 'react-router-dom';
 const Container = styled.ul`
     display: flex;
     align-items: flex-start;
+    padding: 0;
+    margin: 0;
     a {
         text-decoration: none;
+    }
+    @media only screen and (max-width: 666px) {
+        flex-direction: column;
+        align-items: center;
+        > a {
+            margin: 2px 0 2px 0;
+        }
     }
 `;
 
 const Item = styled.li<{ isCurrent: boolean }>`
     display: flex;
-    margin: 0;
-    padding: 10px 20px 10px 20px;
+    padding: 10px 17px 10px 17px;
     text-transform: uppercase;
     border-radius: 7px;
     font-weight: bold;

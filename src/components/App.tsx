@@ -13,7 +13,7 @@ const Container = styled.div`
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     background: white;
-    margin: 2vh auto 0;
+    margin: 4vw auto 0;
     display: flex;
     flex: 1;
     position: relative;
@@ -24,15 +24,16 @@ const Container = styled.div`
 
 const Navbar = styled.div`
     display: flex;
-    margin: 40px;
+    margin: 3vw;
     justify-content: space-between;
     align-items: center;
-    height: 91px;
+    min-height: 91px;
 `;
 
 const Logo = styled.img`
     width: 91px;
     height: 91px;
+    margin: 0;
 `;
 
 export class App extends Component {
