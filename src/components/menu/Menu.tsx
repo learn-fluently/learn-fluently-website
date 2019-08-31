@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { MenuViewModel } from './MenuViewModel';
-import { Colors } from '../appearance/Colors';
+import { Colors } from '../../appearance/Colors';
 import { RouteComponentProps, withRouter } from 'react-router-dom';
 import { MenuLink } from './MenuLink';
 

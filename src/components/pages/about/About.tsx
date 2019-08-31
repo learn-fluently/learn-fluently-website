@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { Colors } from '../../appearance/Colors';
+import { Colors } from '../../../appearance/Colors';
 import { AboutViewModel } from './AboutViewModel';
 
 const Container = styled.div`

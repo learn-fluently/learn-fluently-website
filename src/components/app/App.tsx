@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import GlobalStyles from '../appearance/GlobalStyles';
+import GlobalStyles from '../../appearance/GlobalStyles';
 import Menu from '../menu/Menu';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { AppViewModel } from './AppViewModel';
