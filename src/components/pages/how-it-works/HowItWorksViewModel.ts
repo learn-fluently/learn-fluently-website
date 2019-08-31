@@ -52,4 +52,11 @@ export class HowItWorksViewModel {
             ],
         ];
     }
+
+    public get note(): { title: string; description: string } {
+        return {
+            title: 'Note:',
+            description: `This app is not for beginners.<br> You should already know basic grammar and vocabulary of the language that you want to attain fluency in.`,
+        };
+    }
 }

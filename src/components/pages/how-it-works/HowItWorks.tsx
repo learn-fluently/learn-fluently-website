@@ -58,6 +58,15 @@ const Section = styled.div`
     }
 `;
 
+const Note = styled.div`
+    h5 {
+        margin: 0;
+    }
+    width: 100%;
+    text-align: center;
+    max-width: 420px;
+`;
+
 export class HowItWorks extends Component {
     // Properties
 
@@ -82,6 +91,10 @@ export class HowItWorks extends Component {
                         ))}
                     </SectionsRowContainer>
                 ))}
+                <Note>
+                    <h5>{this.viewModel.note.title}</h5>
+                    <p dangerouslySetInnerHTML={{ __html: this.viewModel.note.description }} />
+                </Note>
             </Container>
         );
     }
