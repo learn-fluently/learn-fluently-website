@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import { MenuViewModel } from './MenuViewModel';
 import { Colors } from '../appearance/Colors';
-import { Link, RouteComponentProps, withRouter } from 'react-router-dom';
+import { RouteComponentProps, withRouter } from 'react-router-dom';
+import { MenuLink } from './MenuLink';
 
 const Container = styled.ul`
     display: flex;
@@ -45,9 +46,9 @@ class Menu extends Component<RouteComponentProps<{}>> {
         return (
             <Container>
                 {this.viewModel.itemViewModels.map((item, index) => (
-                    <Link key={'MenuItem' + index} to={item.link}>
+                    <MenuLink key={'MenuItem' + index} to={item.link}>
                         <Item isCurrent={window.location.pathname === item.link}>{item.title}</Item>
-                    </Link>
+                    </MenuLink>
                 ))}
             </Container>
         );

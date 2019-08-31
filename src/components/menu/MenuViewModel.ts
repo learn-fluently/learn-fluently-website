@@ -24,7 +24,7 @@ export class MenuViewModel {
             },
             {
                 title: 'Github',
-                link: '',
+                link: 'https://github.com/learn-fluently',
             },
         ];
     }
