@@ -4,8 +4,8 @@ import GlobalStyles from './appearance/GlobalStyles';
 import LogoImage from './../res/images/logo.png';
 import Menu from './menu/Menu';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import { About } from './pages/About';
-import { HowItWorks } from './pages/HowItWorks';
+import { About } from './pages/about/About';
+import { HowItWorks } from './pages/how-it-works/HowItWorks';
 import { Routes } from './Routes';
 import { PrivacyPolicy } from './pages/PrivacyPolicy';
 

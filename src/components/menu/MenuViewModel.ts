@@ -1,8 +1,8 @@
-import {Routes} from "../Routes";
+import { Routes } from '../Routes';
 
 interface MenuItemViewModel {
-    title: string
-    link: string
+    title: string;
+    link: string;
 }
 
 export class MenuViewModel {
@@ -11,22 +11,21 @@ export class MenuViewModel {
     public get itemViewModels(): MenuItemViewModel[] {
         return [
             {
-                title: "About",
-                link: Routes.about
+                title: 'About',
+                link: Routes.about,
             },
             {
-                title: "How it works",
-                link: Routes.howItWorks
+                title: 'How it works',
+                link: Routes.howItWorks,
             },
             {
-                title: "Privacy policy",
-                link: Routes.privacyPolicy
+                title: 'Privacy policy',
+                link: Routes.privacyPolicy,
             },
             {
-                title: "Github",
-                link: ""
-            }
-        ]
+                title: 'Github',
+                link: '',
+            },
+        ];
     }
-
 }
