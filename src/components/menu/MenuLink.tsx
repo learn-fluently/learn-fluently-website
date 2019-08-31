@@ -6,9 +6,9 @@ export class MenuLink extends Component<{ to: string }> {
 
     public render(): React.ReactNode {
         return this.props.to.startsWith('http') ? (
-            <a href={this.props.to} children={this.props.children} />
+            <a href={this.props.to}>{this.props.children}</a>
         ) : (
-            <Link to={this.props.to} children={this.props.children} />
+            <Link to={this.props.to}>{this.props.children}</Link>
         );
     }
 }

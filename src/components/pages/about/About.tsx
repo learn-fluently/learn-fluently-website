@@ -34,7 +34,9 @@ const DownloadButton = styled.a`
     margin-top: 4vw;
 `;
 
-const MokcupsContainer = styled.div``;
+const MockupsContainer = styled.div`
+    padding-right: 2vw;
+`;
 
 const Mockups = styled.img`
     width: 100%;
@@ -67,9 +69,9 @@ export class About extends Component {
                         />
                     </DownloadButton>
                 </Content>
-                <MokcupsContainer>
+                <MockupsContainer>
                     <Mockups src={this.viewModel.mockupImage.image} alt={this.viewModel.mockupImage.description} />
-                </MokcupsContainer>
+                </MockupsContainer>
             </Container>
         );
     }

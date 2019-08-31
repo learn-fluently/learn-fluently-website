@@ -21,8 +21,8 @@ export class PrivacyPolicy extends Component {
         return (
             <Container>
                 <h2>{this.viewModel.title}</h2>
-                {this.viewModel.privacyPolicy.map(description => (
-                    <p dangerouslySetInnerHTML={{ __html: description }} />
+                {this.viewModel.privacyPolicy.map((description, index) => (
+                    <p key={'PPDesc' + index} dangerouslySetInnerHTML={{ __html: description }} />
                 ))}
             </Container>
         );
