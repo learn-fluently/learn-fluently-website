@@ -1,13 +1,9 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import GlobalStyles from './appearance/GlobalStyles';
-import LogoImage from './../res/images/logo.png';
-import Menu from './menu/Menu';
+import GlobalStyles from '../appearance/GlobalStyles';
+import Menu from '../menu/Menu';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import { About } from './pages/about/About';
-import { HowItWorks } from './pages/how-it-works/HowItWorks';
-import { Routes } from './Routes';
-import { PrivacyPolicy } from './pages/PrivacyPolicy';
+import { AppViewModel } from './AppViewModel';
 
 const Container = styled.div`
     border-top-left-radius: 25px;
@@ -37,6 +33,10 @@ const Logo = styled.img`
 `;
 
 export class App extends Component {
+    // Properties
+
+    private viewModel = new AppViewModel();
+
     // Public functions
 
     public render(): React.ReactNode {
@@ -45,12 +45,12 @@ export class App extends Component {
                 <GlobalStyles />
                 <Router>
                     <Navbar>
-                        <Logo src={LogoImage} alt={'Learn Fluently'} />
+                        <Logo src={this.viewModel.logo.image} alt={this.viewModel.logo.description} />
                         <Menu />
                     </Navbar>
-                    <Route exact path={Routes.about} component={About} />
-                    <Route exact path={Routes.howItWorks} component={HowItWorks} />
-                    <Route exact path={Routes.privacyPolicy} component={PrivacyPolicy} />
+                    {this.viewModel.routes.map((route, index) => (
+                        <Route key={'Route' + index} exact path={route.path} component={route.component} />
+                    ))}
                 </Router>
             </Container>
         );
