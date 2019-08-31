@@ -1,6 +1,6 @@
 import { About } from '../pages/about/About';
 import { HowItWorks } from '../pages/how-it-works/HowItWorks';
-import { PrivacyPolicy } from '../pages/PrivacyPolicy';
+import { PrivacyPolicy } from '../pages/privacy-policy/PrivacyPolicy';
 import LogoImage from '../../res/images/logo.png';
 import { ComponentClass } from 'react';
 import { Routes } from '../../Routes';

@@ -25,6 +25,9 @@ export default createGlobalStyle`
     input, button, textarea, :focus {
       outline: none;
     }
+    a {
+      color: #1FB7FC;
+    }
     #root {
         display: flex;
         flex: 1;
