@@ -13,25 +13,13 @@ const Container = styled.div`
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     background: white;
-    margin: 50px auto 0;
+    margin: 2vh auto 0;
     display: flex;
     flex: 1;
     position: relative;
     justify-content: flex-start;
     flex-direction: column;
     max-width: 1250px;
-
-    @media only screen and (max-width: 500px) {
-        margin: 30px 30px 0 30px;
-    }
-
-    @media only screen and (max-width: 400px) {
-        margin: 20px 20px 0 20px;
-    }
-
-    @media only screen and (max-width: 320px) {
-        margin: 10px 10px 0 10px;
-    }
 `;
 
 const Navbar = styled.div`

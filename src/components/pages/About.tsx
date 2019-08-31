@@ -7,10 +7,18 @@ const Container = styled.div`
 `;
 
 const Description = styled.div`
+    flex: 0.5;
+`;
+
+const MokcupsContainer = styled.div`
+    display: block;
+    flex: 0.5;
 `;
 
 const Mockups = styled.img`
-    width: 578px;
+    width: 100%;
+    display: block;
+    height: auto;
 `;
 
 export class About extends Component {
@@ -20,7 +28,9 @@ export class About extends Component {
         return (
             <Container>
                 <Description></Description>
-                <Mockups src={MockupsImage} alt={'Learn Fluently iPhone'} />
+                <MokcupsContainer>
+                    <Mockups width={716} height={911} src={MockupsImage} alt={'Learn Fluently iPhone'} />
+                </MokcupsContainer>
             </Container>
         );
     }
