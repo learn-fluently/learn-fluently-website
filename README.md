@@ -1,3 +1,5 @@
+## About
+
 This repository contains the source code of Learn Fluently website.    
 It's a [React](https://reactjs.org/) app, so you can build and run it by using the following commands.     
 [MVVM pattern](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel) has used in this project to separate the data and the view in the components.
